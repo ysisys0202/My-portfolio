@@ -10,7 +10,10 @@
 @import "./base/font";
 @import "./base/body";
 @import "./base/globals";
+/*animations*/
+@import "./animations/noise";
 /*effects*/
+@import "./effects/noise-effect";
 @import "./effects/sticky-effect";
 /*layouts*/
 @import "./layouts/global-header";
