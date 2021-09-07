@@ -25,23 +25,21 @@
 
   //blind effect
   const blind = document.querySelector(".blind");
-  const blindItems = [];
   const blindItemsLength = 30;
-  const delay = 2000;
+  const delay = 1800;
 
   function makesBlindItems() {
     for (let i = 0; i < blindItemsLength; i++) {
-      blindItems[i] = document.createElement("div");
-    }
-    blindItems.map((blindItem, i) => {
-      blind.appendChild(blindItem);
+      const blindItem = document.createElement("div");
       blindItem.classList.add("blind-item");
       blindItem.style.height = `${100 / blindItemsLength + 1}%`;
       blindItem.style.top = `${(100 / blindItemsLength) * i}%`;
-    });
+      blind.appendChild(blindItem);
+    }
   }
   function activateBlind() {
-    blindItems.map((blindItem, i) => {
+    const blindItems = document.querySelectorAll(".blind-item");
+    blindItems.forEach((blindItem) => {
       blindItem.style.height = `0%`;
       blindItem.style.opacity = `0`;
     });

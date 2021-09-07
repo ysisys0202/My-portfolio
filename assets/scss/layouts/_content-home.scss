@@ -42,10 +42,6 @@
     background-color: $beige;
     transition: height 1200ms ease-in-out, opacity 1200ms ease-in-out;
   }
-  .blind-item.active {
-    opacity: 0;
-    height: 0px;
-  }
   @include responsive(D) {
     .scroll-alret {
       right: 8%;

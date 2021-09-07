@@ -402,9 +402,6 @@ body:before {
     width: 100%;
     background-color: #f8f1e5;
     transition: height 1200ms ease-in-out, opacity 1200ms ease-in-out; }
-  .home .blind-item.active {
-    opacity: 0;
-    height: 0px; }
   @media screen and (max-width: 1319px) {
     .home .scroll-alret {
       right: 8%; } }
