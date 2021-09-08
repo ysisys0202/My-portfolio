@@ -670,11 +670,12 @@ body:before {
     margin: 0 5px; }
 
 .portfolio-tag-group {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap; }
 
 .portfolio-tag {
+  margin-top: 10px;
   padding: 5px 10px;
   border: 1px solid #36382e;
   border-radius: 4px;
